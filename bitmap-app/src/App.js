@@ -9,9 +9,9 @@ const BitmapInfo = ({ countTotalBlocks, countClaimedBlocks }) => {
   return (
     <div className="bitmap-info">
       <h1>BLOCKOUT⛏️COUNTDOWN</h1>🟧🟧🟧🟧🟧🟧🟧🟧
-      <h6>🟧 Total Blocks: {countTotalBlocks}<br></br>
-      ⛏️ Claimed: {countClaimedBlocks}</h6>
-      <div className="available"><h3>{countTotalBlocks - countClaimedBlocks}</h3><div className="availabletag">available</div></div>
+      <h6>🟧 Total Blocks: {countTotalBlocks}</h6>
+      <h6>⛏️ Claimed: {countClaimedBlocks}</h6>
+      <br></br><div className="byline">bitmap.wtf by <a href="https://twitter.com/ordinalos">@ordinalos</a></div>
     </div>
   );
 };
@@ -96,11 +96,12 @@ function App() {
         <pointLight position={[10, 10, 20]} intensity={0.5} />
         <RotatingCube key={updateKey} />
       </Canvas>
+      <div className="available">
+      <h3>{(countTotalBlocks - countClaimedBlocks).toLocaleString()}</h3>
+      <div className="availabletag">available</div>
+      </div>
       <BitmapInfo countTotalBlocks={countTotalBlocks} countClaimedBlocks={countClaimedBlocks} />
       <LoadingBar progress={loadingProgress} />
-      <footer style={{ fontSize: 'small' }}>
-        bitmap.wtf © <a href="https://twitter.com/ordinalos">@ordinalOS</a>
-      </footer>
     </div>
   );
 }
