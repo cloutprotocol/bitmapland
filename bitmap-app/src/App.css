@@ -2,6 +2,7 @@
 
 .App {
   text-align: center;
+  background-color: #dddddd;
 }
 
 .App-logo {
@@ -9,10 +10,42 @@
   pointer-events: none;
 }
 
+h1{
+  font-size:38px;
+}
+
+h2{
+  font-size:20px;
+}
+
+h3{
+  color: white;
+  text-shadow: 0 0 3px #333, 0 0 20px #e8a4065c;
+  font-size:36px;
+  margin-top:20px;
+}
+
 h5, h6{
   font-weight: 300;
-  font-size:24px;
+  font-size:20px;
+  margin:5px;
 }
+
+.loading-bar-container {
+  width: 100%;
+  background-color: #f0f0f0;
+  height: 10px;
+  margin-top: 10px;
+  bottom:0px;
+  position:absolute;
+}
+
+.loading-bar {
+  background-color: #ff7700;
+  height: 100%;
+  transition: width 0.3s ease-in-out;
+}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -26,10 +59,11 @@ h5, h6{
   top: 0;
   left: 0;
   padding: 20px;
+  max-width:500px;
   font-family: 'Michroma', sans-serif;
   text-align:left;
   color: #000000; /* Sci-fi green text color */
-  font-size: 30px;
+  font-size: 24px;
 }
 
 .App-header {
