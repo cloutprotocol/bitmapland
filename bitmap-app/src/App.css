@@ -7,6 +7,7 @@ body{
   text-align: center;
   background-color: #dddddd;
   padding-bottom: env(safe-area-inset-bottom); /* Add this line */
+  padding-top: env(safe-area-inset-top); /* Add this line */
 }
 
 .App-logo {
@@ -16,18 +17,23 @@ body{
 
 .available{
   font-size:11px;
-  margin-left:180px;
-  margin-top:-5px;
+  position:aboslute;
+  padding:0px 0px;
+}
+
+.availabletag{
+  font-size:11px;
+  position:aboslute;
+  padding:0px 0px;
+  float:right;
+  margin:-5px 0px;
 }
 
 h1{
-  font-size:30px;
+  font-size:22px;
   font-family: 'Press Start 2P', cursive;
   margin:0px;
   color:white;
-}
-
-h2{
 }
 
 h3{
@@ -39,7 +45,7 @@ h3{
 h5, h6{
   font-weight: 300;
   font-size:12px;
-  margin:5px;
+  margin:20px 0px;
 }
 
 .loading-bar-container {
@@ -71,7 +77,7 @@ h5, h6{
   top: 0;
   left: 0;
   padding: 40px;
-  max-width:500px;
+  max-width:240px;
   font-family: 'Michroma', sans-serif;
   text-align:left;
   color: #000000; /* Sci-fi green text color */
