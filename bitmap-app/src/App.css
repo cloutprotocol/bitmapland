@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+
 .App {
   text-align: center;
 }
@@ -13,6 +15,18 @@
   }
 }
 
+/* App.css */
+.bitmap-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  font-family: 'Michroma', sans-serif;
+  text-align:left;
+  color: #000000; /* Sci-fi green text color */
+  font-size: 36px;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -26,6 +40,38 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: black;
+}
+
+.terminal-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  background-color: #111;
+  width: 500px;
+  height: 500px;
+  border: 1px solid #888;
+  border-radius: 5px;
+  color: orange;
+  font-family: monospace;
+}
+
+
+.app-header {
+  margin-bottom: 20px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
 }
 
 @keyframes App-logo-spin {
