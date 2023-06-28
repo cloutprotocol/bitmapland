@@ -2,7 +2,7 @@ import { useRef } from 'react';
 import { useFrame } from '@react-three/fiber';
 import { Box } from '@react-three/drei';
 
-const gridData = new Array(60).fill(new Array(60).fill(0)); // creates a 30x30 grid
+const gridData = new Array(100).fill(new Array(60).fill(0)); // creates a 30x30 grid
 
 const Cube = ({ position }) => {
   const mesh = useRef();

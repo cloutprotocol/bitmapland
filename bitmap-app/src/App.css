@@ -9,6 +9,11 @@
   pointer-events: none;
 }
 
+h5, h6{
+  font-weight: 300;
+  font-size:24px;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -24,7 +29,7 @@
   font-family: 'Michroma', sans-serif;
   text-align:left;
   color: #000000; /* Sci-fi green text color */
-  font-size: 36px;
+  font-size: 30px;
 }
 
 .App-header {
@@ -72,6 +77,9 @@
 footer {
   text-align: center;
   margin-top: 20px;
+  position:absolute;
+  bottom: 20px;
+  width: 100%;
 }
 
 @keyframes App-logo-spin {
