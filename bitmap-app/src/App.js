@@ -7,7 +7,7 @@ import './App.css'; // Import the CSS file
 const BitmapInfo = ({ countTotalBlocks, countClaimedBlocks }) => {
   return (
     <div className="bitmap-info">
-      <h1>Blockout 🟧 🟧 🟧 ⬜ </h1>
+      <h1>Blockout ⛏️</h1>
       <h6>🟧 Total Blocks: {countTotalBlocks}</h6>
       <h6>⛏️ Claimed: {countClaimedBlocks}</h6>
       <h3>Available: {countTotalBlocks - countClaimedBlocks}</h3>
