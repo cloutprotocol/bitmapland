@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import io from 'socket.io-client';
 import { Canvas } from '@react-three/fiber';
 import RotatingCube from './RotatingCube';
+import { Helmet } from 'react-helmet';
 import './App.css'; // Import the CSS file
 
 const BitmapInfo = ({ countTotalBlocks, countClaimedBlocks }) => {
@@ -21,8 +22,13 @@ const LoadingBar = ({ progress }) => {
   };
 
   return (
+    <div className="App">
+    <Helmet>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </Helmet>
     <div className="loading-bar-container">
       <div className="loading-bar" style={barStyle} />
+    </div>
     </div>
   );
 };
