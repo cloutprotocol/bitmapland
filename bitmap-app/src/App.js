@@ -4,6 +4,9 @@ import { Canvas } from '@react-three/fiber';
 import RotatingCube from './RotatingCube';
 import { Helmet } from 'react-helmet';
 import './App.css'; // Import the CSS file
+import { inject } from '@vercel/analytics';
+ 
+inject()
 
 const BitmapInfo = ({ countTotalBlocks, countClaimedBlocks }) => {
   return (
