@@ -45,7 +45,7 @@ function App() {
   const [loadingProgress, setLoadingProgress] = useState(0);
 
   useEffect(() => {
-    const trac = io('https://bitmap.trac.network', {
+    const trac = io('https://index.bitmap.land', {
       autoConnect: true,
       reconnection: true,
       reconnectionDelay: 500,
