@@ -5,6 +5,8 @@ import RotatingCube from './RotatingCube';
 import { Helmet } from 'react-helmet';
 import './App.css'; // Import the CSS file
 import { inject } from '@vercel/analytics';
+import { Fireworks } from '@fireworks-js/react';
+
  
 inject()
 
@@ -94,6 +96,16 @@ function App() {
 
   return (
     <div className="App" style={{ width: '100vw', height: '100vh', position: 'relative' }}>
+      <Fireworks
+      style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0 }}
+      count={10} // Adjust the number of fireworks
+      interval={2000} // Adjust the interval between fireworks
+      colors={['#ff0000', '#00ff00', '#0000ff',]} // Adjust the colors of the fireworks
+      calc={{
+        x: (width) => Math.random() * width,
+        y: (height) => Math.random() * height * 0.4, // Adjust the vertical position of the fireworks
+      }}
+    />
       <Canvas camera={{ position: [6, 4, 20], fov: 30 }}>
         <ambientLight intensity={0.3} />
         <pointLight position={[10, 10, 20]} intensity={0.5} />

@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@fireworks-js/react": "^2.10.6",
     "@mediapipe/tasks-vision": "^0.10.2-rc2",
     "@react-three/drei": "^9.77.6",
     "@testing-library/jest-dom": "^5.16.5",
